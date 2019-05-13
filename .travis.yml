@@ -40,7 +40,7 @@ cache:
 install:
   - .utility/pull-dev-resources.sh
   # This will only run on master w/ BUILD_AND_PUBLISH=true
-  - travis_wait 30 .utility/build.sh
+  - .utility/build.sh
 script:
   # This script uses the IT_ONLY flag to determine whether to run unit tests using verify, or ITs only using failsafe
   - .utility/run-tests.sh
